@@ -1,0 +1,58 @@
+*{
+  margin:0;
+  padding:0;
+}
+.wrap{
+  margin:0px auto;
+  width:90%;
+}
+/* 方法一 start */
+.method-1-wrap{
+  position: relative;
+  text-align:center;
+  border: 1.5px solid  #2A1F55;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.method-1-wrap .title{
+  position: absolute;
+  top: -1em;
+  left: 3%;
+  line-height: 1.5em;
+  padding: 0 1em;
+  background:#FFFFFF;
+}
+.formbutton{
+width:50px; 
+height:30px;
+margin-left:65px;
+float:left;
+}
+.tdFormat{
+width:94%; 
+margin:auto
+}
+/* 方法一 end */
+
+/* 方法二 start */
+.method-2-wrap .title{
+  position: relative;
+  text-align: center;
+}
+.method-2-wrap .title:before{
+  content: '';
+  position: absolute;
+  left:0;
+  right:0;
+  top: 50%;
+  border-top: 1px solid #ccc;
+  z-index: -1;
+}
+.method-2-wrap .title span{
+  padding: 0 1em;
+  background-color: #fff;
+}
+.method-2-wrap .content{
+  padding:20px;
+}
+/* 方法二 end */
